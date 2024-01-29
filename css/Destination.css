@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0%;
+}
+
+body,
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image: url(../images/beach\ destination.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.header-main {
+    width: 100%;
+    height: 17vh;
+    margin-top: 1vw;
+    display: flex;
+
+    div {
+        padding-left: 3vw;
+
+        img {
+            width: 5vw;
+            padding-top: 1.2vw;
+            /* border-radius: 90vw; */
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        line-height: 8vw;
+
+        li {
+            margin-left: 5vw;
+
+            a {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: black;
+                font-size: 1.5vw;
+                font-weight: bold;
+                text-decoration: none;
+
+                i {
+                    font-size: 2vw;
+                }
+
+            }
+
+            input {
+                width: 15vw;
+                border: solid 0.2vw black;
+            }
+        }
+    }
+}
+
+.a-1:hover {
+    transition-duration: 0.1s;
+    background-image: linear-gradient(rgb(252, 72, 72), rgb(252, 252, 112));
+    box-shadow: 0vw 0vw 2vw 0.2vw rgb(59, 229, 252);
+    color: azure;
+    padding: 2vw;
+    border-radius: 25vw;
+}
+
+.main-pic-div-1 {
+    margin-left: 6vw;
+    margin-top: 13vw;
+    display: flex;
+
+    .pic-div-1,
+    .pic-div-2,
+    .pic-div-3,
+    .pic-div-4,
+    .pic-div-5,
+    .pic-div-6 {
+
+        border-radius: 1vw;
+        background-image: linear-gradient(rgb(228, 72, 72), rgb(209, 209, 111));
+        width: 14vw;
+        height: 20vw;
+        margin-left: 4vw;
+
+        .p-1,
+        .p-2,
+        .p-3,
+        .p-4,
+        .p-5 {
+            margin: 0vw 0vw 0vw 4vw;
+            color: rgb(0, 0, 0);
+            font-size: 1vw;
+        }
+
+        .img-1 {
+            margin: 1vw 0vw 1vw 1vw;
+            width: 12vw;
+            height: 9vw;
+        }
+
+        .pic-button-1 {
+            cursor: pointer;
+            font-size: 1vw;
+            font-weight: bold;
+            padding: 1vw 3vw;
+            margin: 0.3vw 0vw 0vw 1.5vw;
+            background-image: linear-gradient(rgb(53, 172, 212), rgb(205, 205, 205));
+            border-radius: 1vw;
+        
+        
+        }
+    }
+}
+
+.main-footer {
+    margin-top: 25vw;
+    margin-bottom: 2vw;
+    width: 100%;
+    height: 15vw;
+    /* background-color: black; */
+    background-image: linear-gradient(-25deg, rgb(114, 212, 254) 50%, rgb(255, 255, 255) 50%);
+
+
+
+    h1 {
+        font-size: 4vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    .insta-color {
+        width: 4vw;
+        margin-left: 45vw;
+        margin-top: 1vw;
+        margin-right: 2vw;
+    }
+
+    .facebook-color {
+        width: 4vw;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .header-main {
+        display: grid;
+        height: fit-content;
+        width: fit-content;
+
+        ul {
+            display: grid;
+
+            .a-1 {
+                font-size: 3vw;
+
+                i {
+                    font-size: 3vw;
+                }
+            }
+
+            input {
+                width: 3vw;
+                height: 3vw;
+            }
+        }
+    }
+
+    .main-pic-div-1 {
+        margin-top: 0vw;
+        display: inline-block;
+
+        .pic-div-1,
+        .pic-div-2,
+        .pic-div-3,
+        .pic-div-4,
+        .pic-div-5,
+        .pic-div-6 {
+            width: 30vw;
+            height: 50vw;
+            margin-left: 40vw;
+            margin-bottom: 6vw;
+
+
+
+            .img-1 {
+                margin: 1vw 0vw 1vw 1vw;
+                width: 28vw;
+                height: 20vw;
+
+            }
+
+            .p-1,
+            .p-2,
+            .p-3,
+            .p-4,
+            .p-5 {
+                margin-top: 3vw;
+                margin-left: 6vw;
+                font-size: 3vw;
+                font-weight: bolder;
+
+            }
+
+            .pic-button-1 {
+                margin-top: 4vw;
+                font-size: 2.5vw;
+                padding: 2vw 7vw;
+            }
+
+
+        }
+
+    }
+
+
+}
